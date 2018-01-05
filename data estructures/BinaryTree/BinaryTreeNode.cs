@@ -59,6 +59,7 @@ namespace data_estructures.BinaryTree
 
        public void PreorderTraversal(BinaryTreeNode<T> current)
         {
+
             if (current != null)
             {
                 // Output the value of the current node

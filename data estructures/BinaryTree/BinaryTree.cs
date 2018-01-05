@@ -34,18 +34,18 @@ namespace data_estructures.BinaryTree
 
         public void PreorderTraversal()
         {
-            root.PreorderTraversal(root);
-            
+             root.PreorderTraversal(root);
+  
         }
 
         public void InorderTraversal()
         {
-            root.InorderTraversal(root);
+              root.InorderTraversal(root);
         }
 
         public void PostorderTraversal()
         {
-            root.PostorderTraversal(root);
+              root.PostorderTraversal(root);
         }
     }
 }
