@@ -57,19 +57,19 @@ namespace data_estructures.BinaryTree
             }
         }
 
-        void PreorderTraversal(BinaryTreeNode<T> current)
+       public void PreorderTraversal(BinaryTreeNode<T> current)
         {
             if (current != null)
             {
                 // Output the value of the current node
-                Console.WriteLine(current.Value);
+                Console.Write(current.Value);
 
                 // Recursively print the left and right children
                 PreorderTraversal(current.Left);
                 PreorderTraversal(current.Right);
             }
         }
-        void InorderTraversal(BinaryTreeNode<T> current)
+        public void InorderTraversal(BinaryTreeNode<T> current)
         {
             if (current != null)
             {
@@ -77,14 +77,14 @@ namespace data_estructures.BinaryTree
                 InorderTraversal(current.Left);
 
                 // Output the value of the current node
-                Console.WriteLine(current.Value);
+                Console.Write(current.Value);
 
                 // Visit the right child...
                 InorderTraversal(current.Right);
             }
         }
 
-        void PostorderTraversal(BinaryTreeNode<T> current)
+        public void PostorderTraversal(BinaryTreeNode<T> current)
         {
             if (current != null)
             {
@@ -95,7 +95,7 @@ namespace data_estructures.BinaryTree
                 PostorderTraversal(current.Right);
 
                 // Output the value of the current node
-                Console.WriteLine(current.Value);
+                Console.Write(current.Value);
             }
         }
     }

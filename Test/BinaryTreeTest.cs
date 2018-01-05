@@ -69,10 +69,15 @@ namespace Test
         #endregion
 
         [TestMethod]
-        public void TestMethod1()
+        public void TestBinaryTree()
         {
-            Assert.AreEqual(btree.Root.Left.Left.Right.Value, 6);
-            Assert.AreEqual(btree.Root.Right.Right.Right.Right.Value,8);
+
+            btree.InorderTraversal();
+            Console.WriteLine(" InOrder");
+            btree.PreorderTraversal();
+            Console.WriteLine(" PreOrder");
+            btree.PostorderTraversal();
+            Console.WriteLine(" PostOrder");
         }
     }
 }
